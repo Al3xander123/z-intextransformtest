@@ -1,0 +1,87 @@
+:root{	--border1:1px solid var(--bcolor1);
+		--border2:1px solid var(--bcolor2);
+		--border3:1px solid var(--bcolor3);
+		--border4:1px solid var(--bcolor4);
+		--border5:1px solid var(--bcolor5);
+		--border6:1px solid var(--bcolor6);
+		--border7:1px solid var(--bcolor7);
+		
+		--bcolor1:black;
+		--bcolor2:brown;
+		--bcolor3:red;
+		--bcolor4:orange;
+		--bcolor5:yellow;
+		--bcolor6:green;
+		--bcolor7:blue;
+		
+		--width1:98%;		--height1:98%;
+		--width2:20em;		--height2:2em;
+		--width5:28%;		--height5:30em;
+		--width6:68%;		--height6:30em;
+		--width7:68%;		--height7:80%;
+		
+		--mtop4:2em;
+}
+html,body,div{position:relative;}
+/*BORDERS*/
+html{border:var(--border1);width:var(--width1);height:var(--height1);}
+body{border:var(--border2);width:var(--width1);height:var(--height1);}
+body{background:black;}
+.parent{border:var(--border3);width:var(--width1);height:var(--height1);}
+.child{display:block;float:left;margin-top:var(--mtop4);}
+/*.child{/*border:var(--border3);width:var(--width1);height:var(--height1);}*/
+.cuno{border:var(--border5);width:var(--width5);height:var(--height5);}
+/*.cuno{display:block;}*/
+.cdos{border:var(--border6);width:var(--width6);height:var(--height6);}
+.cdos{display:grid;place-items:center;}
+
+
+.textos{border:var(--border7);width:var(--width7);height:var(--height7);}
+.textos{overflow:hidden;}
+
+button{position:relative;transition-duration:2s;}
+.boton{/*border:var(--bcolor);*/width:var(--width2);height:var(--height2);}
+.boton{margin:1em;}
+
+/*.boton:hover{	transform:translateX(10em);}*/
+/*
+button{border-radius:2px 10px 2px 10px;}
+*/
+
+@keyframes animacion{
+  0%{transform:rotate(0deg);}
+100%{transform:rotate(180deg);}
+}
+/*IMAGENES*/
+.planetas{border:1px solid violet;width:20em;height:20em;}
+.planetas{position:absolute;top:6em;left:35%;}
+.planetas{transition-duration:0.5s;}
+.puno   {top: 2em;left:35em;z-index:1;background:var(--bcolor1);}
+.pdos   {top: 4em;left:37em;z-index:2;background:var(--bcolor2);}
+.ptres  {top: 6em;left:39em;z-index:3;background:var(--bcolor3);}
+.pcuatro{top: 8em;left:41em;z-index:4;background:var(--bcolor4);}
+.pcinco {top:10em;left:43em;z-index:5;background:var(--bcolor5);}
+.pseis  {top:12em;left:45em;z-index:6;background:url("venus.jpg");background-size:contain;border-radius:50%;overflow:hidden;}
+
+
+body{background:url("tierra.jpg");}
+body{transition-duration:1s;}
+
+/*contain,cover*/
+/*
+.puno{	background:url("mercurio.jpg");
+		background-repeat:no-repeat;
+		background-size:cover;}
+.pdos{	background:url("venus.jpg");
+		background-repeat:no-repeat;
+		background-size:cover;}
+.ptres{	background:url("tierra.jpg");
+		background-repeat:no-repeat;
+		background-size:cover;}
+.pcuatro{	background:url("marte.jpg");
+		background-repeat:no-repeat;
+		background-size:cover;}
+.pcinco{	background:url("jupiter.jpg");
+		background-repeat:no-repeat;
+		background-size:cover;}
+		*/
